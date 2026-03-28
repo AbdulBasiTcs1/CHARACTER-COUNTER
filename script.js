@@ -6,10 +6,11 @@ const maxLength = parseInt(textinput.getAttribute("maxLength"));
 
 textinput.addEventListener("input", () =>{
 
-    const currentLength = textinput.ariaValueMax.length;
+    const currentLength = textinput.value.length;
     const percentage = (currentLength/maxLength) *100;
 
     currentCount.textContent = currentLength;
+
     progressFill.style.width = `${percentage}%`;
 
     currentCount.classList.remove("warning","danger")
