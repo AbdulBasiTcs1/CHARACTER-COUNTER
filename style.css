@@ -12,11 +12,13 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+
 }
 
 .container {
     width: 100%;
     max-width: 600px;
+    border-radius: 10px;
 }
 
 .card {
@@ -25,6 +27,7 @@ body {
     padding: 32px;
     border: 1px solid #334155;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 .card-header {
@@ -36,6 +39,8 @@ h1 {
     font-weight: 700;
     color: #f1f5f9;
     margin-bottom: 8px;
+    letter-spacing: -0.5px;
+
 }
 
 .subtitle {
@@ -99,7 +104,7 @@ h1 {
     color: #fbbf24;
 }
 
-.current-count.ganger {
+.current-count.danger {
     color: #ef4444;
 }
 
@@ -148,6 +153,10 @@ h1 {
 
 
 
-.progress-fill.warning { background: linear-gradient(90deg, #fbbf24, #fcd34d); }
-.progress-fill.danger  { background: linear-gradient(90deg, #ef4444, #f87171); }
+.progress-fill.warning { 
+    background: linear-gradient(90deg, #fbbf24, #fcd34d); 
+}
+.progress-fill.danger  { 
+    background: linear-gradient(90deg, #ef4444, #f87171); 
+}
 
